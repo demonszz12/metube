@@ -1,0 +1,24 @@
+.videoContent{
+    height:80vh;
+    width:96%;
+    margin:2%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+}
+
+.eachone{
+    width:100%;
+}
+
+@media all and (max-width:730px){
+    .videoContent{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media all and (max-width:420px){
+    .videoContent{
+        grid-template-columns: 1fr;
+    }
+}
